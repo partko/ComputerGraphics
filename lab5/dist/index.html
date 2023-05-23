@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>lab4</title>
+  <meta charset="UTF-8">
+</head>
+
+<script src="/index.3d214d75.js" defer=""></script>
+<script src="/index.81bdab46.js"></script>
+
+<body>
+<canvas id="cubes" width="1400" height="700"></canvas>
+<br>
+
+<select id="LightingModel">
+
+  <option value="0">Phong Lighting Model</option>
+
+  <option value="1">Lambert Lighting Model</option>
+
+  <option value="2">Blinn-Phong Lighting Model</option>
+
+</select>
+<select id="ShadingModel">
+
+  <option value="0">Gouraud Shading Model</option>
+
+  <option value="1">Phong Shading Model</option>
+
+  <option value="2">Toon Shading Model</option>
+
+</select>
+Ambient contribution:
+<label for="ambient"></label><input type="text" id="ambient" value="1">
+Kc:
+<label for="kc"></label><input type="text" id="kc" value="1.0">
+Kl:
+<label for="kl"></label><input type="text" id="kl" value="0.0009">
+Kq:
+<label for="kq"></label><input type="text" id="kq" value="0.0003">
+<button id="applyBtn">
+Apply
+</button>
+<br>
+Digit:
+<input type="text" id="digit-range" min="0" value="0.8" max="1.0">
+Material:
+<input type="text" id="material-range" min="0" value="0.8" max="1.0">
+
+</body>
+</html>
